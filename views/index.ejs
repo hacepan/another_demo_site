@@ -1,0 +1,11 @@
+<% layout('layout') %>
+
+<h2>Today's Headlines</h2>
+<div class="article-grid">
+  <% headlines.forEach(article => { %>
+    <article class="article-card">
+      <h3><a href="/article/<%= article.id %>"><%= article.title %></a></h3>
+      <p><%= article.summary %></p>
+    </article>
+  <% }); %>
+</div>
