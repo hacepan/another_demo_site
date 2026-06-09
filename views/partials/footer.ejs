@@ -1,6 +1,5 @@
 <footer class="site-footer">
   <div class="footer-content">
-    <p>&copy; <%= new Date().getFullYear() %> The Daily Faux. Entirely Fictional.</p>
-    <p>Disclaimer: This is satire. None of this is real.</p>
+    <p><%= new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'}); %>
   </div>
 </footer>
